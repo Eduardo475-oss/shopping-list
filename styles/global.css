@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family:  "Inter", sans-serif;
+    --title: 1.5rem/2rem bold var(--font-family);
+    --label: 1rem/1.25rem medium var(--font-family);
+    --p: 1rem/1.25rem medium var(--font-family);
+    --link: 0.875rem/1rem medium var(--font-family);
+
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+    --white: #FFFFFF;
+}
