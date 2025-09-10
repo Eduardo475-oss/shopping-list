@@ -23,3 +23,25 @@
     --border-hover: #B9C2D0;
     --white: #FFFFFF;
 }
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--white);
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 630px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}

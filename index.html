@@ -12,6 +12,52 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <main class="container">
+        <div class="back-title">
+            <img src="assets/arrow-left-02-stroke-rounded.svg" alt="">
+            <span>Voltar</span>
+        </div>
+
+        <h1>Compras da semana</h1>
+
+        <form>
+            <div class="add-item">
+                <input type="text" placeholder="Adicione um novo item">
+                <button>
+                    Adicionar item
+                </button>
+            </div>
+
+            <ul>
+                <li>
+                    <div>
+                        <input type="checkbox" name="bread">
+                        <label for="bread">Pão de forma</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="coffe">
+                        <label for="coffe">Café preto</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="juice">
+                        <label for="juice">Suco de laranja</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="cookie">
+                        <label for="cookie">Bolacha</label>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="error-item">
+                <img src="assets/alert-circle-stroke-rounded.svg" alt="">
+                <span>O item foi removido da lista</span>
+                <img src="assets/excluir.svg" alt="" >
+            </div>
+        </form>
+    </main>
 </body>
 </html>
