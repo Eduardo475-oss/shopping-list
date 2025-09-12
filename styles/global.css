@@ -28,20 +28,20 @@ body {
     font-family: var(--font-family);
     background-color: var(--white);
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
 
-.container {
-    width: 630px;
-
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    & .logo {
+        margin-top: 1.5rem;
+    }
 }
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

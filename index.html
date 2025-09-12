@@ -12,50 +12,66 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <img src="assets/logo.svg" alt="" class="logo">
+
     <main class="container">
         <div class="back-title">
-            <img src="assets/arrow-left-02-stroke-rounded.svg" alt="">
-            <span>Voltar</span>
+            <a href="#">
+                <img src="assets/arrow-left-02-stroke-rounded.svg" alt="" class="arrow-left">
+                <span>Voltar</span>
+            </a>
         </div>
-
-        <h1>Compras da semana</h1>
+            
+            <h1>Compras da semana</h1>
 
         <form>
             <div class="add-item">
-                <input type="text" placeholder="Adicione um novo item">
+                <input type="text" placeholder="Adicione um novo item" class="text" name="add">
                 <button>
-                    Adicionar item
+                        Adicionar item
                 </button>
             </div>
 
-            <ul>
-                <li>
-                    <div>
-                        <input type="checkbox" name="bread">
-                        <label for="bread">Pão de forma</label>
+            <ul class="list">
+                    <div class="box-item">
+                        <div class="item-2">
+                            <input type="checkbox" name="bread">
+                            <label for="bread">Pão de forma</label>
+                        </div>
+                        <img src="assets/lixeira.svg" alt="">
                     </div>
 
-                    <div>
-                        <input type="checkbox" name="coffe">
-                        <label for="coffe">Café preto</label>
+                    <div class="box-item">
+                        <div class="item-2">
+                            <input type="checkbox" name="coffe">
+                            <label for="coffe">Café preto</label>
+                        </div>
+                            <img src="assets/lixeira.svg" alt="">
                     </div>
 
-                    <div>
-                        <input type="checkbox" name="juice">
-                        <label for="juice">Suco de laranja</label>
+                    <div class="box-item">
+                        <div class="item-2">
+                            <input type="checkbox" name="juice">
+                            <label for="juice">Suco de laranja</label>
+                        </div>
+                        <img src="assets/lixeira.svg" alt="">
                     </div>
 
-                    <div>
-                        <input type="checkbox" name="cookie">
-                        <label for="cookie">Bolacha</label>
+                    <div class="box-item">
+                        <div class="item-2">
+                            <input type="checkbox" name="cookie">
+                            <label for="cookie">Bolacha</label>
+                        </div>
+                        <img src="assets/lixeira.svg" alt="">
                     </div>
-                </li>
             </ul>
 
             <div class="error-item">
-                <img src="assets/alert-circle-stroke-rounded.svg" alt="">
-                <span>O item foi removido da lista</span>
-                <img src="assets/excluir.svg" alt="" >
+                <div class="item-2">
+                    <img src="assets/alerta.svg" alt="">
+                    <span>O item foi removido da lista</span>
+                </div>
+                    <img src="assets/excluir.svg" alt="" >
             </div>
         </form>
     </main>
