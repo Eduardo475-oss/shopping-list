@@ -1,5 +1,11 @@
 .container {
-    width: 630px;
+    /* border: 2px solid red; */
+
+    position: relative;
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 1rem;
 
    padding-block: 6rem;
 
@@ -10,6 +16,8 @@
     gap: 1rem;
 
     & .back-title {
+        width: 100%;
+
         & a {
             display: flex;
             align-items: center;
@@ -29,16 +37,28 @@
     }
 
     & .add-item {
+        width: 100%;
         display: flex;
         gap: 1rem;
         margin-top: 1rem;
 
         & input[type="text"] {
-            width: 28.1875rem;
+            width: 100%;
+            /* max-width: 28rem; */
             padding: 10px;
             border-radius: .5rem;
             border: solid 2px var(--border-primary);
+            outline: none;
+            transition: border-color 0.3s ease;
         }
+
+        & input[type="text"]:hover {
+            border-color: var(--border-hover);
+        }
+
+        & input[type="text"]:focus {
+            border-color: var(--color-brand-hover);
+        }    
 
         & button {
             width: 10rem;
@@ -49,33 +69,74 @@
             color: #fff;
             cursor: pointer;
          }
+
+         & button:hover {
+            background-color: var(--color-brand-hover);
+         }
     }
 
+    
+
     & .list {
+        width: 100%;
         display: grid;
         gap: .5rem;
         margin-top: 2rem;
 
         & .box-item {
+            width: 100%;
+            max-width: 39rem;
+            padding: 10px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
             
-            width: 39.1875rem;
-            padding: 10px;
             border-radius: .5rem;
             background-color: var(--background-secondary);
-            border: solid 1px var(--border-primary);      
+            border: solid 1px var(--border-primary);     
+            
+            & .item-2 {
+                position: relative;
+
+                width: 160px;
+
+                & input[type="checkbox"] {
+                    all: unset;
+                    position: absolute;
+                    inset: 0;
+                    cursor: pointer;
+                }
+                
+                .checkbox-image {
+                    flex: 0 0 1.5rem;
+                    height: 1.5rem;
+                    
+                    background-image: url(../assets/checkbox.default.svg);
+                    background-repeat: no-repeat;            
+                }
+                
+                &:hover, &:focus-within {
+                    .checkbox-image {
+                        background-image: url(../assets/checkbox.hover.svg);
+                    }
+            }
+            
+            &:has(:checked) .checkbox-image {
+                background-image: url(../assets/checked.svg);
+            }
+        }
         }
     }
-
+    
     & .error-item {
+        width: 100%;
+        max-width: 39rem;
         display: flex;
         align-items: center;
         margin-top: 2rem;
         justify-content: space-between;
 
-        width: 39.1875rem;
         padding: 10px;
         border-radius: .5rem;
         background-color: var(--color-danger);
@@ -85,5 +146,40 @@
     & .item-2 {
         display: flex;
         gap: 1rem;
+    }
+
+    & input {
+        cursor: pointer;
+    }
+}
+
+    /* .container * {
+        border: 1px dashed blue;
+    } */
+
+@media (max-width: 414px) {
+    body {
+        font-size: 0.875rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .container {
+        max-width: 327px;
+        
+
+        & .add-item {
+            flex-direction: column;
+
+            & button {
+                width: 256.14px;
+            }
+        }
+
+        & .error-item {
+            gap: 2rem;
+        }
     }
 }
