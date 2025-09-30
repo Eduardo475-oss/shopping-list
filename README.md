@@ -4,4 +4,6 @@ Inicio do site:
 Site funcionando: 
 <img width="1359" height="689" alt="image" src="https://github.com/user-attachments/assets/8f1b7e23-5647-419f-a232-8f865e2b7c86" />
 
-20250930_005955 https://reccloud.com/pt/u/fnb352u
+
+https://github.com/user-attachments/assets/a254e1b7-2c80-4393-b9e3-fac711a236c9
+
