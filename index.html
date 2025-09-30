@@ -26,66 +26,72 @@
 
         <form>
             <div class="add-item">
-                <input type="text" placeholder="Adicione um novo item" class="text" name="add">
-                <button>
-                        Adicionar item
+                <input type="text" placeholder="Adicione um novo item" class="text" id="add" name="add"
+                required>
+                <button type="submit">
+                    Adicionar item
                 </button>
             </div>
+            
+            <p id="erro" style="color: red; display: none;">Digite apenas letras</p>
 
-            <ul class="list">
-                    <div class="box-item">
-                        <div class="item-2">
-                            <div class="checkbox-image"></div>
-                            <input type="checkbox" name="bread">
-                            <label for="bread">Pão de forma</label>
-                        </div>
-                        <a href="#">
-                            <img src="assets/lixeira.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="box-item">
-                        <div class="item-2">
-                            <div class="checkbox-image"></div>
-                            <input type="checkbox" name="coffe">
-                            <label for="coffe">Café preto</label>
-                        </div>
-                        <a href="#">
-                            <img src="assets/lixeira.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="box-item">
-                        <div class="item-2">
-                            <div class="checkbox-image"></div>
-                            <input type="checkbox" name="juice">
-                            <label for="juice">Suco de laranja</label>
-                        </div>
-                        <a href="#">
-                            <img src="assets/lixeira.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="box-item">
-                        <div class="item-2">
-                            <div class="checkbox-image"></div>
-                            <input type="checkbox" name="cookie">
-                            <label for="cookie">Bolacha</label>
-                        </div>
-                        <a href="#">
-                            <img src="assets/lixeira.svg" alt="">
-                        </a>
-                        </div>
-            </ul>
-
-            <div class="error-item">
-                <div class="item-2">
-                    <img src="assets/alerta.svg" alt="">
-                    <span>O item foi removido da lista</span>
-                </div>
-                    <img src="assets/excluir.svg" alt="" >
-            </div>
         </form>
+            <ul id="list"></ul>
+
+            <footer>
+                <div class="error-item">
+                    <div class="item-2">
+                        <img src="assets/alerta.svg" alt="">
+                        <span>O item foi removido da lista</span>
+                    </div>
+                </div>
+            </footer>
     </main>
+
+    <!-- <li class="box-item">
+        <div class="item-2">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="bread" id="item">
+            <label for="bread">Pão de forma</label>
+        </div>
+        <a href="#">
+            <img src="assets/lixeira.svg" alt="">
+        </a>
+    </li>
+
+    <li class="box-item">
+        <div class="item-2">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="coffe" id="item">
+            <label for="coffe">Café preto</label>
+        </div>
+        <a href="#">
+            <img src="assets/lixeira.svg" alt="">
+        </a>
+    </li>
+
+    <li class="box-item">
+        <div class="item-2">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="juice" id="item">
+            <label for="juice">Suco de laranja</label>
+        </div>
+        <a href="#">
+            <img src="assets/lixeira.svg" alt="">
+        </a>
+    </li>
+
+    <li class="box-item">
+        <div class="item-2">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="cookie" id="item">
+            <label for="cookie">Bolacha</label>
+        </div>
+        <a href="#">
+            <img src="assets/lixeira.svg" alt="">
+        </a>
+    </li> -->
+
+    <script src="scripts.js"></script>
 </body>
 </html>
