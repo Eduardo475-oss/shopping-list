@@ -19,6 +19,7 @@ input.addEventListener("input", () => {
     }
 });
 
+// Crio o botão de excluir da mensagem
 const errorItem = footer.querySelector(".error-item");
 
 // errorItem.innerHTML = "";
@@ -31,7 +32,7 @@ const errorItem = footer.querySelector(".error-item");
     </svg>
     `;
     
-    
+    // Manipulo o botão para que quando seja clicado exclua a mensagem     
     excluir.addEventListener("click", (event) => {
         event.preventDefault();
         footer.remove();
@@ -61,11 +62,13 @@ form.addEventListener("submit", (event) => {
         const label = document.createElement("label")
         label.textContent = valor;
 
+        // Monto a estrutura do item
         li.appendChild(checkbox);
         li.appendChild(label);
 
         list.appendChild(li)
 
+        // Crio o botão de excluir (lixeira) do item
         const botaoRemover = document.createElement("button")
         botaoRemover.innerHTML = `<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13 4.16666L12.5869 10.8501C12.4813 12.5576 12.4285 13.4114 12.0005 14.0253C11.7889 14.3287 11.5165 14.5849 11.2005 14.7773C10.5614 15.1667 9.706 15.1667 7.99513 15.1667C6.28208 15.1667 5.42553 15.1667 4.78603 14.7766C4.46987 14.5838 4.19733 14.3272 3.98579 14.0232C3.55792 13.4084 3.5063 12.5534 3.40307 10.8435L3 4.16666" stroke="#6B6671" stroke-linecap="round"/>
@@ -76,6 +79,7 @@ form.addEventListener("submit", (event) => {
 `
 ;
 
+        // Manipulo o botão para quando ser clicado, exclua o item da lista
         botaoRemover.addEventListener("click", (event) => {
             event.preventDefault();
             li.remove();
